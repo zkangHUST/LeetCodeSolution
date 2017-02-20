@@ -9,5 +9,4 @@ int climbStairs(int n) {
         OneStep= sum;
     }
     return sum;
-
 }
