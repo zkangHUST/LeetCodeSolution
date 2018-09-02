@@ -11,6 +11,7 @@ class Solution(object):
             if(i==0):
                 if(nums[i]>nums[i+1]):
                     break
+                    
             elif(i == len(nums)-1):
                 if(nums[i]>nums[i-1]):
                     break             
