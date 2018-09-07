@@ -12,6 +12,7 @@ class Solution(object):
         p = ListNode(0)
         q = ListNode(0)
         p = head
+        #注意head可能为空
         if(head != None and head.next != None):
             q = head.next
         else:
