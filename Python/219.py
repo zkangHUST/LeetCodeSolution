@@ -6,17 +6,16 @@ class Solution(object):
         :rtype: bool
         """
         length = len(nums)
-        l = set()
-        for i in range(k+1):
-            if nums[i] not in l:
-                l.add(nums[i])
+        if(k >= length):
+            l = set(nums)
+            if(length != len(l)):
+                return True
             else:
-                return true
-        while(i < length):
-            l.remove(l[0])
-            if nums[i] not in l:
-                l.add(nums[i])
-            else:
-                return true
-            i++
-        return false
+                return False
+                        
+        for i in range(length-k):
+            l = set(nums[i:i+k+1])
+            if(len(l)!=k+1):
+                return True
+        
+        return False
