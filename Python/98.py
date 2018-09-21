@@ -18,9 +18,9 @@ class Solution:
             return True
         if(self.travel(root.left,l) == False):
             return False
-        l.append(root.val)
-        if(len(l)>=2 and l[-1] <= l[-2]):
+        if l and root.val < l[-1]:
             return False
+        l.append(root.val)
         if(self.travel(root.right,l) == False):
             return False
         return True
