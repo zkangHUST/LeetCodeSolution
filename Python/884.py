@@ -1,34 +1,18 @@
-class Solution(object):
-    def backspaceCompare(self, S, T):
+class Solution:
+    def uncommonFromSentences(self, A, B):
         """
-        :type S: str
-        :type T: str
-        :rtype: bool
+        :type A: str
+        :type B: str
+        :rtype: List[str]
         """
-        s = list(S)
-        t = list(T)
-        s=self.delete(s) 
-        t=self.delete(t)
-        if(s==t):
-            return True
-        else:
-            return False
-    def delete(self,S):
-        res=[]
-        for i in S:
-            if(i=='#'):
-                if(res):
-                    res.pop()
-            else:
-                res.append(i)
-        l = ''.join(res)
-        return l  
-
-
-
-
+        res = []
+        l1 = A.split(' ') + B.split(' ')
+        for key in l1:
+            if l1.count(key) == 1:
+                res.append(key)    
+        return res
 res = Solution()
-s="#c"
-t="ad##c"
-ans = res.backspaceCompare(s,t)
+A = "this apple is sweet"
+B = "this apple is sour"
+ans = res.uncommonFromSentences(A, B)
 print(ans)
