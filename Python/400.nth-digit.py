@@ -54,17 +54,16 @@ class Solution:
             else:
                 tmp += (9 * i * 10**(i -1))
                 i += 1
-        bit = i
-        # tmp + num * bit >= n
-        num = (n - tmp) / bit
+        # tmp + num * i >= n
+        num = (n - tmp) / i
         # num = num > int(num)?int(num) + 1:int 
         if (num > int(num)):
             num = int(num) + 1
         else:
             num = int(num)
         if(num > 0):
-            tmp += (num - 1) * bit
-        k = 10 ** (bit - 1) + num - 1
+            tmp += (num - 1) * i
+        k = 10 ** (i - 1) + num - 1
         return int(str(k)[n - tmp - 1])
 res = Solution()
 for i in range(189, 200):
