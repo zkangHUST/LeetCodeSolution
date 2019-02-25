@@ -1,0 +1,7 @@
+
+Python/.vscode/launch.json
+*.json
+Python/__pycache__/*
+Python/*.md
+Python/*.txt
+Python/Untitled*
