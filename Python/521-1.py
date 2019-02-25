@@ -43,7 +43,7 @@ class Solution:
         if (i != len(a)):
             return False
         return True
-res = Solution()
-l = ["aabbcc", "aabbcc","cb"]
-ans = res.findLUSlength(l)
-print(ans)
+# res = Solution()
+# l = ["aabbcc", "aabbcc","cb"]
+# ans = res.findLUSlength(l)
+# print(ans)
