@@ -12,4 +12,3 @@ class Solution:
 res = Solution()
 ans = res.binaryGap(22)
 print(ans)            
-
