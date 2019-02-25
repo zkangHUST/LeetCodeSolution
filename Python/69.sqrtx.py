@@ -50,6 +50,6 @@ class Solution:
             else:
                 left = mid + 1
                 mid = (left + right) // 2          
-res = Solution()
-ans = res.mySqrt(100)
-print(ans)
+# res = Solution()
+# ans = res.mySqrt(100)
+# print(ans)
