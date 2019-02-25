@@ -19,6 +19,6 @@ class Solution(object):
             return a
         else: 
             return c
-res = Solution()
-nums = [1,2,2,5,3,5]
-print(res.thirdMax(nums))
+# res = Solution()
+# nums = [1,2,2,5,3,5]
+# print(res.thirdMax(nums))
