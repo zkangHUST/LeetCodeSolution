@@ -1,3 +1,0 @@
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mnt/hgfs/work/3rdlib/modsecurity/lib/:
-
-:/usr/local/mpc-1.1.0/lib:/usr/local/gmp-6.1.2/lib:/usr/local/mpfr-4.0.1/lib:/mnt/hgfs/work/webproxy_new/3rdlib/gd/lib:/mnt/work/webproxy_new/3rdlib/jpeg/lib:/mnt/work/webproxy_new/3rdlib/png/lib:/mnt/work/webproxy_new/3rdlib/z/lib:/mnt/work/webproxy_new/3rdlib/freetype/lib:/mnt/work/webproxy_new/3rdlib/openssl/lib:/mnt/work/webproxy_new/3rdlib/ihunter/lib:/mnt/work/webproxy_new/3rdlib/modsecurity/lib
