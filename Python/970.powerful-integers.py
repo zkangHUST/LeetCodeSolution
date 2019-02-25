@@ -84,3 +84,4 @@ class Solution:
 res = Solution()
 ans = res.powerfulIntegers(1, 1, 100)
 print(ans)
+
