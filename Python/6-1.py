@@ -21,3 +21,4 @@ class Solution:
             else:
                 index -= 1
         return ''.join(l)
+
