@@ -23,7 +23,7 @@ class Solution():
                         grid[i][j] = min(grid[i - 1][j], grid[i][j - 1]) + grid[i][j]
         return grid[row - 1][colum - 1]
 
-grid = [[1,3,1],[1,5,1],[4,2,1]]
-res = Solution()
-ans = res.minPathSum(grid)
-print(ans);        
+# grid = [[1,3,1],[1,5,1],[4,2,1]]
+# res = Solution()
+# ans = res.minPathSum(grid)
+# print(ans);        
