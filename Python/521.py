@@ -36,7 +36,7 @@ class Solution:
         if (j == len(b)):
             return True
         return False
-res = Solution()
-l= ["aba","gahbia","gahbia","abcdef","abcdef"]
-ans = res.findLUSlength(l)
-print(ans)
+# res = Solution()
+# l= ["aba","gahbia","gahbia","abcdef","abcdef"]
+# ans = res.findLUSlength(l)
+# print(ans)
