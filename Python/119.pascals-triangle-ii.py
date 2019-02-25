@@ -52,4 +52,3 @@ if __name__ == "__main__":
     res = Solution()
     ans = res.getRow(3)
     print(ans)       
-        
