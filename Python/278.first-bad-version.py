@@ -57,4 +57,3 @@ class Solution:
             else:
                 left = mid + 1
             mid = (left + right) // 2
-        
