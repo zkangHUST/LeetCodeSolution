@@ -65,12 +65,7 @@ class Solution:
             tmp += (num - 1) * i
         k = 10 ** (i - 1) + num - 1
         return int(str(k)[n - tmp - 1])
-res = Solution()
-for i in range(189, 200):
-    ans = res.findNthDigit(i)
-    print(ans)
-#123456789
-#10111213141516171819
-#99        
-# 9 + 180
-# 100
+# res = Solution()
+# for i in range(189, 200):
+#     ans = res.findNthDigit(i)
+#     print(ans)

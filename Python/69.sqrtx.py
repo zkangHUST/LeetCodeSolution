@@ -38,4 +38,18 @@
 #
 class Solution:
     def mySqrt(self, x: 'int') -> 'int':
-        
+        left = 1
+        right = x
+        mid = (left + right) // 2
+        while True:
+            if (mid * mid <= x and (mid + 1) * (mid + 1) > x):
+                return mid
+            elif (mid * mid > x):
+                right = mid - 1
+                mid = (left + right) // 2
+            else:
+                left = mid + 1
+                mid = (left + right) // 2          
+res = Solution()
+ans = res.mySqrt(100)
+print(ans)
