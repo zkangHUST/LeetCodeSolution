@@ -23,15 +23,15 @@ class Solution:
                     if (j > 0): 
                         res[i][j] += res[i][j - 1]
         return res[row -1][colum - 1]         
-if __name__ == '__main__':
-    grid = [
-    [0,0,0],
-    [0,1,0],
-    [0,0,0]
-    ]
-    res = Solution()
-    ans = res.uniquePathsWithObstacles(grid)
-    print(ans)
+# if __name__ == '__main__':
+#     grid = [
+#     [0,0,0],
+#     [0,1,0],
+#     [0,0,0]
+#     ]
+#     res = Solution()
+#     ans = res.uniquePathsWithObstacles(grid)
+#     print(ans)
 
                 
 
