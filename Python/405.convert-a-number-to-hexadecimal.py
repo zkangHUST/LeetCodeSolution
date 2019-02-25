@@ -67,4 +67,3 @@ class Solution:
 res = Solution()
 ans = res.toHex(42949672960)
 print(ans)  
-
