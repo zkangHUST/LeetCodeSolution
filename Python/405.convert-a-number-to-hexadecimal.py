@@ -64,7 +64,7 @@ class Solution:
             num = num // 16
         l = ''.join(res)
         return l
-res = Solution()
-ans = res.toHex(42949672960)
-print(ans)  
+# res = Solution()
+# ans = res.toHex(42949672960)
+# print(ans)  
 
