@@ -6,3 +6,5 @@ Python/*.md
 Python/*.txt
 Python/Untitled*
 Test/*
+.vscode/
+*.exe
