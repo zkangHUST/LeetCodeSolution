@@ -1,3 +1,5 @@
+# dp解法dp[i][j]表示前i+j个人中，有i个人去A城市，j个人去B城市最小的开销。
+# 那么dp[i][j] = min(dp[i - 1][j] + costs[i + j - 1][0], dp[i][j - 1] + costs[i + j - 1][1])
 class Solution:
     def twoCitySchedCost(self, costs) :
         n = len(costs) // 2
