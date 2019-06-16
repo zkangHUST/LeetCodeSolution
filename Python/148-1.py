@@ -12,21 +12,19 @@ class Solution:
         while head:
             length += 1
             head = head.next
-        cur = dumpy.next
-        tail = dumpy
         size = 1
         while size < length:
+            cur = dumpy.next
+            tail = dumpy
             while cur:
                 l = cur
                 r = self.spilt(cur, size)
                 cur = self.spilt(r, size)
                 tail.next, tmp = self.merge(l, r)
                 tail = tmp
-            cur = dumpy.next
-            tail = dumpy
             size *= 2
         return dumpy.next
-
+    # split n node from head.return the rest list.
     def spilt(self, head, n):
         n -= 1
         while n and head:   
