@@ -20,7 +20,7 @@ class Solution:
     def merge(self, l1, l2):
         dumpy = ListNode(0)
         tail = dumpy
-        while(l1):
+        while(l1 and l2):
             if l1.val > l2.val:
                 l1, l2 = l2, l1
             tail.next = l1
@@ -31,7 +31,6 @@ class Solution:
         
         if l2:
             tail.next = l2
-        
         return dumpy.next
     
                  
