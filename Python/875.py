@@ -1,5 +1,4 @@
 # 二分查找，区间左闭右开
-import math
 class Solution:
     def minEatingSpeed(self, piles: List[int], H: int) -> int:
         l = 1
@@ -15,5 +14,5 @@ class Solution:
     def hours(self, piles, n):
         h = 0
         for val in piles:
-            h += math.ceil(val / n)
+            h += (val + n - 1) // n 
         return h
