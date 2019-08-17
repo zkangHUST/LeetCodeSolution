@@ -15,4 +15,5 @@ class Solution:
                     right += 1
                     stack.append(c)
         return left + right
+
         
