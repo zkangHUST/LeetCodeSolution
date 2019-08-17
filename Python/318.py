@@ -8,6 +8,8 @@ class Solution:
                     max = tmp
         return max
     def check(self, a, b):
+        if len(a) > len(b):
+            a , b = b, a
         for c in a:
             if c in b:
                 return 0
