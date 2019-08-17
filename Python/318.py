@@ -14,5 +14,6 @@ class Solution:
             if c in b:
                 return 0
         return len(a) * len(b)
+        
     
         
