@@ -4,11 +4,8 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
 class Solution:
     def levelOrderBottom(self, root: TreeNode) -> List[List[int]]:
-        self.levelTravel(root)
-    def levelTravel(self, root):
         if not root:
             return 
         stack = []
@@ -21,7 +18,7 @@ class Solution:
             if cnt > 0:
                 cnt -= 1
                 tmp = stack.pop(0)
-                s.append(tmp)
+                s.append(tmp.val)
                 if tmp.left :
                     stack.append(tmp.left)
                     nextcnt += 1
@@ -33,7 +30,6 @@ class Solution:
                 nextcnt = 0
                 res.append(s[:])
                 s.clear()
+        res.append(s[:])
         return res[::-1]
-
-
-            
+        
