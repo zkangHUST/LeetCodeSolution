@@ -18,7 +18,8 @@ class Solution:
             self.get(nums, cnt + 1, i + 1, path[:], target - nums[i])
             path.pop()
 
-            
+
+
 nums = [-3,-2,-1,0,0,1,2,3]
 p = Solution()
 print(p.fourSum(nums, 0))
