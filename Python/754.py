@@ -1,19 +1,12 @@
 class Solution:
-    def reachNumber(self, target: 'int') -> 'int':
-        i = 0
-        m = 0
-        if (target < 0):
-            target = -target
-        while(m != target):
+    def reachNumber(self, target: int) -> int:
+        target = abs(target)
+        p, i = 0, 0
+        while p < target or (p + target) % 2 != 0:
             i += 1
-            if (m + i > target):
-                m -= i  
-            else:
-                m += i
+            p = p + i
         return i
 
-if __name__ == "__main__":
-    res = Solution()
-    for i in range(10):
-        ans = res.reachNumber(i)
-        print(ans)
+p = Solution()
+ans = p.reachNumber(-1000000000)
+print(ans)
