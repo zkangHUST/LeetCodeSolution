@@ -1,3 +1,4 @@
+# 思路见LeetCode上自己写的题解
 class Solution:
     def reachNumber(self, target: int) -> int:
         target = abs(target)
