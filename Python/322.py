@@ -1,5 +1,7 @@
 class Solution:
     def coinChange(self, coins, amount):
+        if amount == 0:
+            return 0
         dp = [-1 for i in range(amount + 1)]
         for i in range(amount + 1):
             if i in coins:
