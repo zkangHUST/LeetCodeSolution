@@ -1,3 +1,4 @@
+# 回溯法,超时
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:
         self.ans = []
