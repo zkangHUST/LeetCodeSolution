@@ -21,5 +21,3 @@ class Solution:
         self.dfs(root.left, num)
         self.dfs(root.right, num)
         
-            
-        

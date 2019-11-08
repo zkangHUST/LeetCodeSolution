@@ -11,6 +11,6 @@ class Solution:
         for p in pos:
             for i in range(len(matrix)):
                 matrix[i][p[1]] = 0
-            for j in range(len(matrix)):
+            for j in range(len(matrix[0])):
                 matrix[p[0]][j] = 0
         

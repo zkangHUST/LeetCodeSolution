@@ -1,5 +1,5 @@
 class Solution:
-    def countSubstrings(self, s: str) -> int:
+    def longestPalindrome(self, s: str) -> str:
         dp = [[0 for i in range(len(s))] for j in range(len(s))]
         for j in range(len(s)):
             for i in range(j + 1):
@@ -12,9 +12,12 @@ class Solution:
                         dp[i][j] = 1
                     else:
                         dp[i][j] = dp[i + 1][j - 1]
-        cnt = 0
+        maxlen = 0
+        ans = ""
         for i in range(len(s)):
             for j in range(len(s)):
                 if dp[i][j]:
-                    cnt += 1
-        return cnt
+                    if j - i + 1 > maxlen:
+                        maxlen = j - i + 1
+                        ans = s[i:j+1]
+        return ans
