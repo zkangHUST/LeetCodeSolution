@@ -29,7 +29,3 @@ class Solution:
                 cnt = nextcnt
                 nextcnt = 0
         return ans
-        
-        
-
-                

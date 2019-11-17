@@ -23,7 +23,6 @@ class Solution:
                     break
         return path
 
-
     def fact(self, n):
         ans = 1
         while n > 0:
