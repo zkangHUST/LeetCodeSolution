@@ -13,7 +13,7 @@ class Solution:
         m = 'z'
         ans = 0
         for c in s:
-            if c < m:
+            if c <= m:
                 ans = s.count(c)
                 m = c
         return ans
