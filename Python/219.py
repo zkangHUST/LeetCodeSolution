@@ -5,17 +5,10 @@ class Solution(object):
         :type k: int
         :rtype: bool
         """
-        length = len(nums)
-        if(k >= length):
-            l = set(nums)
-            if(length != len(l)):
+        cnt = {}
+        for i in range(len(nums)):
+            if nums[i] in cnt and i - cnt[nums[i]] <= k:
                 return True
-            else:
-                return False
-                        
-        for i in range(length-k):
-            l = set(nums[i:i+k+1])
-            if(len(l)!=k+1):
-                return True
-        
+            cnt[nums[i]] = i
+
         return False
