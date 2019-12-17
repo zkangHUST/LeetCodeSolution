@@ -1,7 +1,7 @@
 class Solution:
     def numRollsToTarget(self, d: int, f: int, target: int) -> int:
         self.cnt = 0
-        self.dfs(0, target, 1, d, f)
+        self.dfs(0, target, 0, d, f)
         return self.cnt
     
     def dfs(self, cur, target, num, sum, f):
