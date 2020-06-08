@@ -2,7 +2,7 @@ class Solution:
     def getKth(self, lo: int, hi: int, k: int) -> int:
         self.weight = {}
         res = [i for i in range(lo, hi + 1)]
-        res.sort(key = lambda x:self.getWeight(x))
+        res.sort(key = lambda x:(self.getWeight(x), x))
         return res[k - 1]
     def getWeight(self, n):
         if n in self.weight:
